@@ -1,7 +1,7 @@
 # No_sql_exercise on redis
 # Redis Movie & Actor Database
 
-Cette application utilise **Redis** comme base de données en mémoire pour stocker et manipuler des données sur des **films** et des **acteurs**. Elle est conçue pour fonctionner avec des scripts simples en **Python** (via un Notebook Jupyter) et permet d'exécuter diverses requêtes analytiques.
+Cette application utilise **Redis** comme base de données en mémoire pour stocker et manipuler des données sur des **films** et des **acteurs**. Elle est conçue pour fonctionner avec des scripts en **Python** (via un Notebook Jupyter) et permet d'exécuter diverses requêtes analytiques.
 
 ## 📃 Structure des données
 
