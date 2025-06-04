@@ -1,0 +1,25 @@
+services:
+  notebook:
+    image: jupyter/scipy-notebook
+    ports:
+      - "9988:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+
+  hbase:
+    image: harisekhon/hbase
+    container_name: hbase
+    ports:
+      - "16010:16010"   # HBase Web UI
+      - "9090:9090"     # Thrift server
+      - "2181:2181"     # Zookeeper
+    volumes:
+      - hbase_data:/opt/hbase-data
+    environment:
+      - HBASE_MANAGES_ZK=true
+    restart: unless-stopped
+
+volumes:
+  hbase_data:
